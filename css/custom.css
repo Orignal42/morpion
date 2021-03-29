@@ -1,0 +1,15 @@
+.board{
+    display: flex;
+    flex-flow: row;
+
+}
+.square{
+    border:1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: center;
+}
+
+
+
