@@ -1,14 +1,21 @@
 .board{
     display: flex;
     flex-flow: row;
-
+    justify-content: center;
+    align-items: center;
+font-size: 700%;
 }
 .square{
-    border:1px solid black;
+    border:2px solid black;
+    border-radius: 0%;
     width: 100px;
     height: 100px;
     text-align: center;
     vertical-align: center;
+    overflow: hidden;
+    
+  
+    
 }
 
 

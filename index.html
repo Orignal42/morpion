@@ -11,23 +11,38 @@
 <body>
 <div class="board">   
     <div class=ligne>
-      <div class="square"></div>      
-      <div class="square"></div>  
-      <div class="square"></div>
+      <div class="square" data-cell="0" ></div>      
+      <div class="square" data-cell="1" ></div>  
+      <div class="square" data-cell="2" ></div>
       </div>  
     <div class=ligne>
-            <div class="square"></div>  
-            <div class="square"></div>  
-            <div class="square"></div>
+            <div class="square" data-cell="3" ></div>  
+            <div class="square" data-cell="4" ></div>  
+            <div class="square" data-cell="5" ></div>
     </div>
-    <div class=ligne>
-            <div class="square"></div>  
-            <div class="square"></div>  
-            <div class="square"></div> 
+            <div class=ligne>
+                 <div class="square" data-cell="6" ></div>  
+                 <div class="square" data-cell="7" ></div>  
+                 <div class="square" data-cell="8" ></div> 
       
-    </div>  
+            </div>  
 </div>
+<form action="" method="post" name="formu" id="formu">
+    <p align="center"> 
+      <input name="heure" type="text" id="heure" value="0 jour(s) et 00 : 00 : 00"> ou    <input name="seco" type="text"  value="00"> seconde(s).
+    </p>
+    <p align="center"> 
+      <input type="button" name="Submit" value="Start!" onClick="Chrono();">
+      <input type="button" name="Submit2" value="Stop!" onClick="window.clearTimeout(chrono);">
+      <input type="button" name="Submit3" value="RAZ"onClick="if (confirm('Souhaitez vous mettre le compteur à zéro?')){s=0;m=0;j=0;h=0;ss=0; window.status = 'Chrono 0 jour(s) et 00 : 00 : 00' ; document.formu.heure.value ='0 jour(s) et 00 : 00 : 00';document.formu.seco.value='0'+0;}">
+    </p>
+ 
+      
+    </p>
+  </form>
     
+
+<a href="./index.html"><input type="button" name="Reset "value="Reset"/></a>
     <script src="./class/Player.js"></script>
     <script src="./class/Board.js"></script>
     <script src="./js/main.js"></script>
