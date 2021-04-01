@@ -27,24 +27,30 @@
       
             </div>  
 </div>
-<form action="" method="post" name="formu" id="formu">
-    <p align="center"> 
-      <input name="heure" type="text" id="heure" value="0 jour(s) et 00 : 00 : 00"> ou    <input name="seco" type="text"  value="00"> seconde(s).
-    </p>
-    <p align="center"> 
-      <input type="button" name="Submit" value="Start!" onClick="Chrono();">
-      <input type="button" name="Submit2" value="Stop!" onClick="window.clearTimeout(chrono);">
-      <input type="button" name="Submit3" value="RAZ"onClick="if (confirm('Souhaitez vous mettre le compteur à zéro?')){s=0;m=0;j=0;h=0;ss=0; window.status = 'Chrono 0 jour(s) et 00 : 00 : 00' ; document.formu.heure.value ='0 jour(s) et 00 : 00 : 00';document.formu.seco.value='0'+0;}">
-    </p>
- 
-      
-    </p>
-  </form>
-    
-
+<div class="boutton">
 <a href="./index.html"><input type="button" name="Reset "value="Reset"/></a>
+</div>
+<div class="joueurCountTable">
+  <div class="joueur">
+    <p>joueur 1</p>
+    <p id='joueur1'>0</p>
+
+  </div>
+  <div class="joueur">
+    <p>joueur 2</p>
+    <p  id='joueur2'>0</p>
+   
+  </div>
+</div>
+
+<div id="timer"></div>
+<div class="chrono">
+  <button onclick='resetTimer()'>Reset timer</button>
+<button onclick='startTimer()'>Start timer</button>
+</div>
     <script src="./class/Player.js"></script>
     <script src="./class/Board.js"></script>
+    <script src="./class/Chrono.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

@@ -1,22 +1,50 @@
+body{
+background-color: yellow;
+margin: 10%;
+}
 .board{
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-font-size: 700%;
+    font-size: 700%;
+    color:white;
 }
 .square{
     border:2px solid black;
-    border-radius: 0%;
+    border-radius: 25%;
     width: 100px;
     height: 100px;
     text-align: center;
     vertical-align: center;
-    overflow: hidden;
-    
-  
-    
+    overflow: hidden;   
+    background-color: darkcyan;
+    margin: 10%;
+    margin-right: 10%;
+}
+.joueurCountTable{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.joueur{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 20px;
 }
 
 
+.boutton{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+.chrono{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
